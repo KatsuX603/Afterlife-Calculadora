@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Benny's MW • Calculadora RP</title>
+    <title>AfterLife • Calculadora RP</title>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -27,10 +27,10 @@
                 card: "#17171C",
                 soft: "#23232A",
                 ring: "#2B2B33",
-                red: "#dd5004",
+                red: "#ff0000",
                 text: "#E8E8F0",
-                dim: "#dd5004",
-                green: "#dd5004",
+                dim: "#ff0000",
+                green: "#ff0000",
               },
             },
             boxShadow: {
@@ -58,7 +58,7 @@
           var(--tw-ring-shadow, 0 0 #0000);
       }
       .switch input:checked + span {
-        background: #dd5004;
+        background: #ff0000;
       }
       .switch input:checked + span::after {
         transform: translateX(20px);
@@ -102,7 +102,7 @@
         class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
       >
         <h1 class="text-2xl font-extrabold tracking-tight">
-          Benny's MW • Calculadora RP
+          AfterLife • Calculadora RP
         </h1>
         <div class="flex items-center gap-2">
           <button
@@ -141,7 +141,7 @@
                 class="w-10 h-6 rounded-full bg-gray-600 transition relative"
               ></span>
             </label>
-            <span class="ml-3 text-sm">Desconto de 10% no valor final</span>
+            <span class="ml-3 text-sm">Desconto de 20% no valor final</span>
           </div>
           <div>
             <label for="kmExterno" class="block text-sm text-tg-dim mb-1"
@@ -218,7 +218,7 @@
     <footer
       class="max-w-6xl mx-auto px-4 pb-10 text-center text-xs text-tg-dim"
     >
-      Feito para RP de mecânico. Estilo inspirado no shadcn com Tailwind.
+      AfterLife &copy; 2026
     </footer>
 
     <script>
@@ -238,35 +238,35 @@
             items: [
               {
                 id: "reparo_interno",
-                label: "Reparo interno",
+                label: "Reparo",
                 type: "toggle",
-                price: 1000,
+                price: 4500,
               },
               {
                 id: "kit_basico",
-                label: "Kit reparo (1 uso)",
+                label: "Kit reparo básico",
                 type: "qty",
-                price: 2000,
+                price: 2500,
                 groupId: "kits",
               },
               {
                 id: "kit_avancado",
-                label: "Kit reparo mestre (3 usos)",
+                label: "Kit reparo avançado (3 usos)",
                 type: "qty",
-                price: 6000,
+                price: 5000,
                 groupId: "kits",
               },
               {
                 id: "chave_inglesa",
                 label: "Chave inglesa",
                 type: "qty",
-                price: 20000,
+                price: 2500,
               },
               {
                 id: "elevador_hidraulico",
-                label: "Macaco hidráulico | Desvirar carro (1 uso)",
+                label: "Macaco hidráulico",
                 type: "toggle",
-                price: 1000,
+                price: 7000,
               },
               { 
                 id: "pneu", 
@@ -275,291 +275,22 @@
                 price: 500,
               },
               {
-                id: "remap",
-                label: "Remap",
+                id: "exaustor",
+                label: "Kit Exaustor",
                 type: "qty",
-                price: 150000,
+                price: 20000,
               },
               {
                 id: "nitro",
-                label: "Nitro",
+                label: "Kit Nitro",
                 type: "qty",
-                price: 15000,
-              },
-            ],
-          },
-          {
-            id: "tunagem",
-            title: "Tunagem",
-            twoCols: true,
-            items: [
-              {
-                id: "fullblindagem",
-                label: "Full C/ Blindagem",
-                type: "toggle",
-                price: 234000,
+                price: 35000,
               },
               {
-                id: "full",
-                label: "Full S/ Blindagem",
-                type: "toggle",
-                price: 174000,
-              },
-              {
-                id: "suspensao1",
-                label: "Suspensão 1",
-                type: "toggle",
-                price: 9000,
-              },
-              {
-                id: "suspensao2",
-                label: "Suspensão 2",
-                type: "toggle",
-                price: 18000,
-              },
-              {
-                id: "suspensao3",
-                label: "Suspensão 3",
-                type: "toggle",
-                price: 27000,
-              },
-              {
-                id: "suspensao4",
-                label: "Suspensão 4",
-                type: "toggle",
-                price: 36000,
-              },
-              {
-                id: "turbo",
-                label: "Turbo",
-                type: "toggle",
-                price: 24000,
-              },
-              {
-                id: "motor1",
-                label: "Motor 1",
-                type: "toggle",
-                price: 33000,
-              },
-              {
-                id: "motor2",
-                label: "Motor 2",
-                type: "toggle",
-                price: 42000,
-              },
-              {
-                id: "motor3", 
-                label: "Motor 3", 
-                type: "toggle", 
-                price: 51000
-              },
-              { 
-                id: "motor4", 
-                label: "Motor 4", 
-                type: "toggle", 
-                price: 60000 
-              },
-              {
-                id: "freio1",
-                label: "Freio 1",
-                type: "toggle",
-                price: 9000,
-              },
-              {
-                id: "freio2",
-                label: "Freio 2",
-                type: "toggle",
-                price: 18000,
-              },
-              { 
-                id: "freio3", 
-                label: "Freio 3", 
-                type: "toggle", 
-                price: 27000 
-              },
-              {
-                id: "trasmissao1",
-                label: "Transmissão 1",
-                type: "toggle",
-                price: 9000,
-              },
-              {
-                id: "trasmissao2",
-                label: "Transmissão 2",
-                type: "toggle",
-                price: 18000,
-              },
-              {
-                id: "trasmissao3",
-                label: "Transmissão 3",
-                type: "toggle",
-                price: 27000,
-              },
-              { id: "blindagem1", 
-              label: "Blindagem 1", 
-              type: "toggle", 
-              price: 15000 },
-              { 
-                id: "blindagem2", 
-                label: "Blindagem 2", 
-                type: "toggle", 
-                price: 30000
-              },
-              {
-                id: "blindagem3",
-                label: "Blindagem 3",
-                type: "toggle",
-                price: 45000,
-              },
-              {
-                id: "blindagem4",
-                label: "Blindagem 4",
-                type: "toggle",
-                price: 60000,
-              },
-            ],
-          },
-          {
-            id: "custom",
-            title: "Customização",
-            twoCols: true,
-            items: [
-              {
-                id: "pintura_prima",
-                label: "Pintura primária",
-                type: "toggle",
-                price: 3500,
-              },
-              {
-                id: "pintura_secundaria",
-                label: "Pintura secundária",
-                type: "toggle",
-                price: 3500,
-              },
-              {
-                id: "perolado",
-                label: "Perolado",
-                type: "toggle",
-                price: 1000,
-              },
-              {
-                id: "adesivo",
-                label: "Decalque (Livery)",
-                type: "toggle",
-                price: 2500,
-              },
-              {
-                id: "para_dianteiro",
-                label: "Parachoque dianteiro",
-                type: "toggle",
-                price: 4000,
-              },
-              {
-                id: "para_traseiro",
-                label: "Parachoque traseiro",
-                type: "toggle",
-                price: 4000,
-              },
-              {
-                id: "saia_lateral",
-                label: "Saia lateral",
-                type: "toggle",
-                price: 4000,
-              },
-              { 
-                id: "capo", 
-                label: "Capô", 
-                type: "toggle", 
-                price: 4000 
-              },
-              { 
-                id: "teto", 
-                label: "Teto", 
-                type: "toggle", 
-                price:  4000,
-              },
-              {
-                id: "escapamento",
-                label: "Escapamento",
-                type: "toggle",
-                price: 4000,
-              },
-              {
-                id: "para_lama",
-                label: "Para-lama",
-                type: "toggle",
-                price: 4000,
-              },
-              {
-                id: "vidro", 
-                label: "Vidro", 
-                type: "toggle", 
-                price: 4000 
-            },
-              {
-                id: "aerofolio",
-                label: "Aerofólio",
-                type: "toggle",
-                price: 4000,
-              },
-              {
-                id: "chassi_gaiola",
-                label: "Chassi (tudo na categoria)",
+                id: "cnitro",
+                label: "Cilindro Nitro",
                 type: "qty",
-                price: 4000,
-              },
-              { 
-                id: "buzina", 
-                label: "Buzina", 
-                type: "toggle", 
-                price: 4000 
-              },
-              { 
-                id: "rodas", 
-                label: "Rodas", 
-                type: "toggle", 
-                price: 5000 },
-              {
-                id: "cor_roda",
-                label: "Cor da roda",
-                type: "toggle",
-                price: 2000,
-              },
-              {
-                id: "fumaca_pneu",
-                label: "Fumaça do pneu",
-                type: "toggle",
-                price: 2000,
-              },
-              { 
-                id: "placa", 
-                label: "Placa", 
-                type: "toggle", 
-                price: 4000 
-            },
-              { 
-                id: "farol", 
-                label: "Xenon", 
-                type: "toggle", 
-                price: 4000 
-              },
-              { 
-                id: "neon", 
-                label: "Neon", 
-                type: "toggle", 
-                price: 4000 
-              },
-              { 
-                id: "extras", 
-                label: "Extras", 
-                type: "qty", 
-                price: 4000 
-              },
-              {
-                id: "adicionais",
-                label: "Adicionais (O que não estiver nas categoria acima)",
-                type: "qty",
-                price: 4000,
+                price: 7000,
               },
             ],
           },
@@ -568,7 +299,7 @@
         externoEnabled: true, // <-- desativa atendimento externo sem excluir
         externoKmPrice: 1000,
         // desconto para parceiros
-        partnerDiscount: 0.1,
+        partnerDiscount: 0.2,
         // espaço para taxas adicionais se quiser no futuro
         feesPercent: 0,
       };
@@ -896,7 +627,7 @@
         const total = $("#grandTotal").textContent;
         const partner = state.isPartner ? "Sim" : "Não";
         return [
-          `Orçamento Benny's MW`,
+          `Orçamento AfterLife`,
           `Parceiro: ${partner}`,
           `KM externo: ${state.km || 0} km`,
           `Total: ${total}`,
@@ -905,7 +636,7 @@
 
       function makeDetailedInvoice() {
         const lines = [];
-        lines.push("ORÇAMENTO • Benny's MW");
+        lines.push("ORÇAMENTO • AfterLife");
         lines.push("");
 
         CONFIG.categories.forEach((cat) => {
